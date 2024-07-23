@@ -1,0 +1,265 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #1a2c51;
+    font-family: Rubik, sans-serif;
+
+}
+
+/* Début de la cover du portfolio */
+
+.cover {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background-image: url('../../public/images/code.webp');
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 50px;
+}
+
+
+.cover::after {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#typing-text::after {
+    content: 'développeur';
+    font-size: 70px;
+    color: #fff;
+    font-family: Rubik, sans-serif;
+    animation: change-text 7s infinite;
+}
+
+@keyframes change-text {
+    from {
+        content: 'DEVELOPPEUR';
+    }
+
+    25% {
+        content: 'ENTHOUSIASME';
+    }
+
+    50% {
+        content: 'CURIOSITE';
+    }
+
+    75% {
+        content: 'PASSION';
+    }
+
+    to {
+        content: 'WEB';
+    }
+}
+
+/* Début de ma présentation */
+
+.rounded-card {
+    height: 650px;
+    width: 1150px;
+    border-radius: 10px;
+    background-color: #60aef1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    box-shadow: 7px 7px 8px;
+}
+
+.maphoto {
+    height: 450px;
+    width: 300px;
+    border-radius: 10px;
+    background-image: url('../../public/images/manou.jpg');
+    background-size: cover;
+}
+
+.description {
+    width: 400px;
+    color: #1a2c51;
+    font-size: 20px;
+}
+
+
+/* Début de la présentation de mes skills */
+
+.skills {
+    height: 800px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.titrecompet {
+    color: #f0f7fe;
+}
+
+.skill {
+    height: 85px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 23px;
+    margin-right: 10px;
+
+}
+
+.photo {
+    height: 80px;
+    width: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.photo img {
+    height: 80px;
+    width: 80px;
+}
+
+.crea {
+    flex-direction: column;
+}
+
+.front {
+    flex-direction: column;
+}
+
+.back {
+    flex-direction: column;
+}
+
+.cms {
+    flex-direction: column;
+}
+
+
+/* Mes projets */
+
+.project {
+    transform: translateX(500px);
+    color: #f0f7fe;
+    margin-bottom: 25px;
+}
+
+
+/* Formulaire de contact */
+
+.espaceform {
+    height: 800px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form {
+    height: 500px;
+    width: 400px;
+    border-radius: 10px;
+    border: 2.5px solid #99cdf7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 200px;
+}
+
+form {
+    margin-top: 50px;
+}
+
+form label {
+    color: #fff;
+}
+
+form input {
+    border-radius: 10px;
+    border: 2.5px solid #99cdf7;
+    background: none;
+}
+
+form textarea {
+    border-radius: 10px;
+    border: 2.5px solid #99cdf7;
+    background: none;
+}
+
+
+@media screen and (max-width:768px) {
+    .skills {
+        height: 600px;
+        width: 100%;
+    }
+
+    .skill {
+        height: 50px;
+        width: 80px;
+    }
+
+    .photo h4 {
+        display: none;
+    }
+
+    .photo {
+        height: 50px;
+        width: 50px;
+    }
+
+    .photo img {
+        height: 40px;
+        width: 40px;
+    }
+
+
+    .rounded-card {
+        height: 500px;
+        width: 450px;
+        border-radius: 10px;
+        background-color: #60aef1;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: auto;
+        box-shadow: 7px 7px 8px;
+    }
+
+    .maphoto {
+        height: 300px;
+        width: 200px;
+        border-radius: 10px;
+        background-color: #fff;
+    }
+
+    .description {
+        width: 200px;
+        color: #1a2c51;
+        font-size: 15px;
+    }
+
+
+    .titrecompet h1 {
+        color: #f0f7fe;
+        font-size: 15px;
+    }
+
+    .project {
+        transform: translateX(150px);
+        color: #f0f7fe;
+        margin-bottom: 25px;
+    }
+
+
+}
